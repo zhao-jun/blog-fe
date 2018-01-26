@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        博客初始化
+        <h1>博客初始化</h1>
       </div>
     );
   }
