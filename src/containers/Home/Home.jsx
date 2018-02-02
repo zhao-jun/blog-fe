@@ -11,7 +11,6 @@ class Home extends Component {
     super(props);
     this.toast = this.props.toast
   }
-
   componentDidMount () {
     this.getInfo()
   }
@@ -22,7 +21,6 @@ class Home extends Component {
   push = () => {
     this.props.history.push("/blog")
   }
-
   msg = () => {
     this.toast.setMeaasge('测试')
   }

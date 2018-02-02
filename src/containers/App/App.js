@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Route} from 'react-router-dom'
 import Home from '../../containers/Home/Home'
 import Header from '../../components/Header/Header'
+import Other from '../../containers/Other/Other'
 import Footer from '../../components/Footer/Footer'
 import Toast from '../../components/Toast/Toast'
 
@@ -14,7 +15,7 @@ class App extends Component {
         <Header />
         <Toast />
         <Route exact path="/" component={Home}/>
-        {/* <Route path="/blog" component={Home}/> */}
+        <Route path="/other" component={Other}/>
         <Footer />
       </div>
     );

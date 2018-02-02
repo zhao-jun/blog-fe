@@ -1,8 +1,4 @@
-// import Store from 'store'
 import Config from '../config'
-// import wxAuth from './wxAuth'
-// import Utils from './utils'
-// import {Promise} from 'es6-promise'
 
 const baseUrl = Config.target
 

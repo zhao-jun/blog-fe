@@ -17,11 +17,11 @@ export class Header extends Component {
     }
     isShow(){
         this.setState({
-            animationShow : this.state.animationShow == 'activeShow' ? 'activeHide' : 'activeShow',
+            animationShow : this.state.animationShow === 'activeShow' ? 'activeHide' : 'activeShow',
             userHide : this.state.userHide ? null : 'userHide'
         })
-        this.nav.style.height = this.nav.style.height == '410px'? '0':'410px';
-        this.cover.style.display=this.cover.style.display =='block'?'none':'block';
+        this.nav.style.height = this.nav.style.height === '410px'? '0':'410px';
+        this.cover.style.display=this.cover.style.display ==='block'?'none':'block';
     }
     isHide(){
         this.setState({
