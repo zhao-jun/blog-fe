@@ -16,7 +16,7 @@ class Home extends Component {
   }
   async getInfo () {
     const res = await getTest()
-    console.log(res)
+    // console.log(res)
   }
   push = () => {
     this.props.history.push("/blog")
