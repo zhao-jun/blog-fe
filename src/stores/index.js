@@ -1,3 +1,4 @@
-import toast from './toast'
-const stores = {toast}
+import toastStore from './toast'
+import homeStore from './home'
+const stores = {toastStore, homeStore}
 export default  stores

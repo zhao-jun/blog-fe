@@ -5,9 +5,9 @@ import { observer, inject } from 'mobx-react'
 // 以后细化区分成功和错误
 // @inject(toast)
 // @observer
-const Toast = inject("toast")(observer(({toast}) =>
-    <div className="toast" style={{ "display": toast.message ? "block" : "none"}}>
-        <span className="content">{toast.message}</span>
+const Toast = inject("toastStore")(observer(({toastStore}) =>
+    <div className="toast" style={{ "display": toastStore.message ? "block" : "none"}}>
+        <span className="content">{toastStore.message}</span>
     </div>
 ))
 
