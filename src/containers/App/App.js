@@ -3,6 +3,7 @@ import {Route, Switch, withRouter} from 'react-router-dom'
 import Home from '../../containers/Home/Home'
 import Header from '../../components/Header/Header'
 import Other from '../../containers/Other/Other'
+import About from '../../components/About/About'
 import Footer from '../../components/Footer/Footer'
 import Toast from '../../components/Toast/Toast'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
@@ -26,6 +27,7 @@ class App extends Component {
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
                 <Route path="/other" component={Other} />
+                <Route path="/about" component={About} />
               </Switch>
             </section>
           </CSSTransition>
