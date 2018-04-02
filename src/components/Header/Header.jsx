@@ -47,11 +47,6 @@ export class Header extends Component {
                   <ul className='nav'  ref={ref=>{this.nav=ref}} onClick={()=>this.isHide()}>
                       <li className='nav-item'><NavLink exact to='/' activeClassName='active' className='link'>首页</NavLink></li>
                       <li className='nav-item'><NavLink to='/blog' activeClassName='active' className='link'>博客</NavLink></li>
-                      {/* {
-                          loginBoxData.name == 'admin' ?
-                              <li className='nav-item'><NavLink to='/create' activeClassName='active' className='link'>发表Blog</NavLink></li>:
-                              null
-                      } */}
                       <li className='nav-item'><NavLink to='/other' activeClassName='active' className='link'>其他</NavLink></li>
                       <li className='nav-item'><NavLink to='/about' activeClassName='active' className='link'>关于</NavLink></li>
                       {/* {

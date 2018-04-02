@@ -1,0 +1,115 @@
+@import "../../assets/style/default.less";
+
+.about {
+    position: relative;
+    // min-height: calc(~"100vh - @{total-height}");
+    height: 100%;
+    overflow: hidden;
+    .aboutBg{
+        position: absolute;
+        left:0;
+        top:0;
+        opacity: 0.7;
+        transform: scale(1.15);
+        transition: all .35s;
+        //transform: translate3d(0,-30px,0);
+    }
+    .aboutWrap {
+        max-width: 750px;
+        margin:20px auto;
+        padding: 40px;
+        font-size: 18px;
+    }
+    .aboutWrap:before {
+        content: '';
+        position: absolute;
+        left: 30px;
+        top:30px;
+        right:30px;
+        bottom:30px;
+        border:1px solid #999;
+        transform: scale(1.1);
+        opacity: 0;
+        transition: all .3s;
+    }
+    .aboutContent {
+        transform: scale(1.1);
+        opacity: 1;
+        transition: all .3s;
+    }
+    h2,h3{
+        text-align: center;
+    }
+    h2 {
+        transform: translate3d(0 ,30px ,0);
+        transition: all .3s;
+        opacity: 0;
+    }
+    &:hover {
+        .aboutBg{
+            transform: scale(1);
+            //transform: translate3d(0,0,0);
+            opacity: 0.5;
+        }
+        .aboutWrap:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .aboutContent {
+            transform: scale(1);
+            opacity: 1;
+        }
+        h2 {
+            transform: translate3d(0 ,0 ,0);
+            opacity: 1;
+        }
+    }
+
+    .github, .mail {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
+        margin-right: 10px;
+        transition: all 1s ease;
+    }
+    .github {
+        background: url("@{img-two-level-path}/github.png") left center no-repeat;
+    }
+    .mail {
+        background: url("@{img-two-level-path}/mail.png") left center no-repeat;
+    }
+    .github:hover, .mail:hover {
+        transform: rotate(360deg);
+    }
+    ul {
+        display: block;
+        list-style-type: disc;
+        margin:1em 0;
+        padding-left: 40px;
+    }
+    li .describe {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about {
+        .aboutBg{
+            transform: scale(1);
+            //transform: translate3d(0,0,0);
+            opacity: 0.5;
+        }
+        .aboutWrap:before {
+            transform: scale(1);
+            opacity: 1;
+        }
+        .aboutContent {
+            transform: scale(1);
+            opacity: 1;
+        }
+        h2 {
+            transform: translate3d(0 ,0 ,0);
+        }
+    }
+}
