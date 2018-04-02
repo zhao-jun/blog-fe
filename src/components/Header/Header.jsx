@@ -15,6 +15,7 @@ export class Header extends Component {
     componentWillMount(){
         // this.props.getUserInfo();
     }
+    // 移动端样式
     isShow(){
         this.setState({
             animationShow : this.state.animationShow === 'activeShow' ? 'activeHide' : 'activeShow',

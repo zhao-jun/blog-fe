@@ -1,3 +1,3 @@
 import request from '../utils/request'
 
-export const getTest = () => request('GET', '/comm/sysFileEnum/list')
+export const getTest = () => request('GET', '/blog/list')

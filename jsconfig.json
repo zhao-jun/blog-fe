@@ -1,0 +1,6 @@
+// https://github.com/Microsoft/vscode/issues/28097#issuecomment-306560817
+{
+  "compilerOptions": {
+      "experimentalDecorators": true
+  }
+}
