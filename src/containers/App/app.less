@@ -3,7 +3,7 @@
 .App {
   .container {
     margin-top: @header-height;
-    height: calc(~"100vh - 110px");
+    // height: calc(~"100vh - 110px");
     position: relative;
   }
   .container-inner {
@@ -21,6 +21,7 @@
   opacity: 0;
 }
 
+// 离开动画
 @keyframes leave-animation {
   0% {
       opacity: 1;
@@ -36,6 +37,7 @@
   }
 }
 
+// 进入动画
 @keyframes enter-animation {
   0% {
       opacity: 0;

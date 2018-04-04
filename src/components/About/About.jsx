@@ -4,7 +4,7 @@ import AboutBg from '../../assets/images/AboutBgLarge.png'
 
 const About = () => (
     <div className="about">
-        <img className="aboutBg" src={AboutBg}></img>
+        <img className="aboutBg" src={AboutBg} alt="aboutBg"></img>
         <div className="aboutWrap">
             <h2>关于</h2>
             <div className="aboutContent">

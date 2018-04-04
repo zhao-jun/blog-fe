@@ -1,13 +1,11 @@
 @import "../../assets/style/default.less";
 
-.homeWrap {
+.home {
   position: relative;
   display: flex;
-  height: 100%;
-  .home {
+  min-height: calc(~"100vh -  @{total-height}");
+  .home-content {
       position: relative;
-/*        left:0;
-      top:0;*/
       background: url("@{img-two-level-path}/home.png") center center no-repeat;
       width: 100%;
       height: calc(~"100vh - 110px");

@@ -1,25 +1,26 @@
 @import "../../assets/style/default.less";
-
 .other {
   box-sizing: border-box;
   display: flex;
-  padding: 20px;
-  // min-height: calc(~"100vh - 110px");
-  height: 100%;
+  // padding: 20px;
+  min-height: calc(~"100vh -  @{total-height}");
   background: url("@{img-two-level-path}/other.png");
   background-size:cover;
-  //justify-content: center;
-  //align-items: center;
-  .otherItem {
+  .other-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .other-item {
     width: 200px;
     height: 200px;
+    margin: 50px;
     background: url("@{img-two-level-path}/canvasBg.png");
     //transform: scale(1.15);
     &:hover {
-      //transform: scale(1);
+      transform: scale(1.15);
     }
   }
-  .otherLink {
+  .other-link {
     display: flex;
     width: 100%;
     height: 100%;

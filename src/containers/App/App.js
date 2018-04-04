@@ -29,10 +29,10 @@ class App extends Component {
                 <Route path="/other" component={Other} />
                 <Route path="/about" component={About} />
               </Switch>
+              <Footer />
             </section>
           </CSSTransition>
         </TransitionGroup>
-        <Footer />
       </div>
     );
   }

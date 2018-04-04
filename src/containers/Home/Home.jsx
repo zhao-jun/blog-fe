@@ -111,8 +111,8 @@ class Home extends Component {
       }
     }
     return (
-      <div className="homeWrap">
-        <div className="home" ref={ref => { this.home = ref }} onClick={this.explode}>
+      <div className="home">
+        <div className="home-content" ref={ref => { this.home = ref }} onClick={this.explode}>
           {
             show ?
               null :
