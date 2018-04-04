@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Route, Switch, withRouter} from 'react-router-dom'
 import Home from '../../containers/Home/Home'
 import Header from '../../components/Header/Header'
+import Blog from '../../containers/Blog/Blog'
 import Other from '../../containers/Other/Other'
 import About from '../../components/About/About'
 import Footer from '../../components/Footer/Footer'
@@ -26,6 +27,7 @@ class App extends Component {
             <section className="container-inner">
               <Switch location={location}>
                 <Route exact path="/" component={Home} />
+                <Route path="/blog" component={Blog} />
                 <Route path="/other" component={Other} />
                 <Route path="/about" component={About} />
               </Switch>
